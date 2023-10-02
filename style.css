@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+*::selection {
+    color: white;
+    background: #000;
+}
+
+.circle {
+    position: fixed;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgb(110, 104, 104);
+    opacity: 50%;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+.nav {
+    display: flex;
+    /* position: fixed; */
+    justify-content: space-around;
+    align-items: center;
+    z-index: 111;
+    width: 100%;
+    height: 10vh;
+    /* background: blue; */
+}
+
+.nav .logo {
+    font-size: 2.1vw;
+    text-transform: capitalize;
+    color: purple;
+    padding: 0 2px;
+    font-weight: 800;
+    /* border: 1px solid red; */
+}
+
+.nav .navItems {
+    display: flex;
+    justify-content: space-around;
+    width: 28%;
+    align-items: center;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.nav .navItems a {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: purple;
+}
+
+.nav .navItems a:hover {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    border-radius: 3px;
+    border: 0 2px 0 0 solid rgb(108, 9, 108);
+    color: rgb(103, 6, 103);
+}
+
+.nav .handles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 4vw;
+    height: 100%;
+}
+
+.handles i {
+    font-size: 30px;
+    color: purple
+}
+
+.wrapper {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 10%; */
+    overflow: hidden;
+    /* background: purple; */
+}
+
+.cols {
+    width: 50%;
+}
+
+.topline {
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #3d535f
+}
+
+.topline::after {
+    position: absolute;
+    content: '';
+    height: 4px;
+    background-color: #7f00ff;
+    bottom: 10px;
+    width: 45px;
+}
+
+h1 {
+    display: block;
+    font-size: 7em;
+    font-weight: 700;
+    color: #3d535f
+}
+
+.multiText {
+    color: #7f00ff;
+    text-transform: capitalize;
+}
+
+p {
+    display: block;
+    width: 90%;
+    font-size: 1.2rem;
+}
+
+.btns {
+    width: 100%;
+    position: relative;
+    left: 150px;
+}
+
+button {
+    outline: none;
+    border: none;
+    font-size: 25px;
+    font-weight: 400;
+    background: #3d535f;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: white !important;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.5);
+}

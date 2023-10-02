@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Pawan Malakar</title>
+</head>
+
+<body>
+    <div class="circle"></div>
+    <div class="container">
+
+        <div class="nav">
+            <div class="logo">carrus</div>
+            <div class="navItems">
+                <a href="https://youtube.com/@_carrus_?si=5nukvlhL6AUHQo22">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Cv</a>
+            </div>
+            <div class="handles">
+                <i class="ri-instagram-line"></i>
+                <i class="ri-facebook-circle-fill"></i>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="cols cols0">
+                <div class="topline">Hello</div>
+                <h1>I'm <span class="multiText">Coder</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aliquid commodi earum sed ducimus quidem explicabo animi.</p>
+                <div class="btns">
+                    <button>Download CV</button>
+                    <button>Hire Me</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var crsr = document.querySelector(".circle");
+
+        document.addEventListener('mousemove', function(dets) {
+            gsap.to(crsr, {
+                top: dets.y - 30,
+                left: dets.x - 30
+            })
+        })
+        var typingEffect = new Typed(".multiText", {
+            strings: ["Coder", "Designer", "Youtuber"],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1500
+        })
+    </script>
+</body>
+
+</html>
